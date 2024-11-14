@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matheus Garcez</title>
+    <link rel="stylesheet" href="style.css">
+
+   <!-- Codigo google fonts-->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,
+500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+   <!-- Codigo google fonts-->
+
+    <!--BOOTSTRAP-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--BOOTSTRAP-->
+
+    <title>Matheus Garcez</title>
+</head>
+</body>
+      <header>
+           <div class="interface">
+            <div class="logo">
+                <a href="#">
+                  <img src="imagens/LOGO.png" alt="">
+                </a>
+            </div><!--logo-->
+           
+             <nav class="menu-desktop">
+
+            <li><a href="a">início</a></li>
+            <li><a href="a">Especialidades</a></li>
+            <li><a href="a">sobre</a></li>
+            <li><a href="a">projetos</a></li>
+         
+           </ul>
+           
+         </nav>
+         <div class="Garcez-contato">
+            <a href="a">
+                <button>Contato</button>
+              
+            </a>
+            
+         </div><!--contato-->
+        
+        </div><!--interface-->
+         
+       
+    </header>
+    <main>
+      <section class="topo-do-site">
+        <div class="interface">
+         <div class="flex">
+          <div class="txt-topo-site">
+        
+            <h1>DESENVOLVO SITES<span>.</span> </h1>
+
+            <P>Mostre sua empresa de forma profissional
+               dentro da internet e aumente o seu faturamento conquistando mais clientes!  </P>
+
+               <div class="Garcez-contato">
+                <a href="#">
+                  <button>Entre em contato</button>
+                </a>
+
+               </div>
+          </div><!--txt-topo-site-->
+          <div class="img-topo-site">
+            <img src="imagens/ites-removebg-preview.png" alt="">
+          </div>
+         </div><!--flex-->
+        </div><!--interface-->
+      </section><!--topo-do-site-->
+      <section class="especialidades">
+        <div class="interface">
+          <h2 class="titulo">MINHAS <span>ESPECIALIDADES.</span></h2>
+          <div class="flex">
+
+              <div class="especialidades-box">
+                <i class="bi bi-code-square"></i>
+                <h3>Website</h3>
+                <p>Desenvolvo websites personalizados, com design responsivo,
+                   performance otimizada e foco na melhor experiência do usuário.</p>
+              </div><!--especialidades box-->
+
+              <div class="especialidades-box">
+                <i class="bi bi-cart"></i>
+                <h3>Loja online</h3>
+                <p>Desenvolvo lojas online intuitivas, seguras e otimizadas para conversão,
+                   com design responsivo e gestão fácil de produtos.</p>
+              </div><!--especialidades box-->
+
+              <div class="especialidades-box">
+                <i class="bi bi-file-richtext"></i>
+                <h3>Landing page</h3>
+                <p>Desenvolvo landing pages focadas em conversão, com design atraente, performance otimizada e experiência de navegação eficiente.</p>
+              </div><!--especialidades box-->
+          </div><!--flex-->
+        </div><!--interface especialidades-->
+      </section><!--especialidades-->
+
+
+      <section class="sobre">
+        <div class="interface">
+             <div class="flex">
+
+              <div class="img-sobre">
+                <img src="imagens/sobre__1_-removebg-preview.png" alt="">
+              </div><!--img sobre-->
+
+                  <div class="txt-sobre">
+                     <h2>MUITO PRAZER, <span>ME CHAMO MATHEUS.</span></h2>
+                     <P>Sou desenvolvedor de sites personalizados, desde landing pages até lojas online,
+                       com foco em performance, design responsivo e usabilidade. Trabalho lado a lado com
+                        meus clientes para criar uma presença digital única, alinhada às necessidades e objetivos de cada projeto.</P>
+
+                        <p>Ofereço soluções completas de desenvolvimento web para empresas e profissionais. Cada site é projetado para
+                           garantir alta conversão, navegação fluida e otimização em todos os dispositivos. Seja um e-commerce ou uma landing page,
+                            meu objetivo é entregar projetos que elevem a presença online dos nossos clientes.</p>
+
+                            <div class="garcez-social">
+                              <a href="#"><button><i class="bi bi-instagram"></i></button></a>
+                              <a href="#"><button><i class="bi bi-linkedin"></i></button></a>
+                              <a href="#"><button><i class="bi bi-whatsapp"></i></button></a>
+                            </div><!--garcez social-->
+                  </div><!--txt sobre-->
+
+                  
+             </div><!--flex-->
+        </div><!--interface sobre-->
+      </section><!--sobre-->
+
+      <section class="Formulario">
+          <div class="interface">
+            <h2 class="titulo">FALA<span>COMIGO.</span></h2>
+
+            <form action="#">
+               <input type="text" name="" id="" placeholder="Seu nome completo" required>
+               <input type="text" name="" id="" placeholder="Seu E-mail" required>
+               <input type="text" name="" id="" placeholder="Seu celular">
+               <textarea name="" id="" placeholder="Sua mensagem" required></textarea>
+                <div class="garcez-enviar"><input type="submit" value="Enviar"></div>
+            </form>
+          </div><!--interface-->
+      </section><!--formulario-->
+    </main>
+      
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+
+    <script>
+      gsap.registerPlugin(ScrollTrigger);
+  
+      gsap.utils.toArray(".especialidades-box").forEach((solucao) => {
+        gsap.from(solucao, {
+          opacity: 0,
+          y: 25,
+          duration: 1,
+          scrollTrigger: {
+            trigger: solucao,
+            start: "top 90%",
+            toggleActions: "play none none reverse"
+          }
+        });
+      });
+    </script>
+</body>
+</html>
